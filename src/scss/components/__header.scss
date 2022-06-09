@@ -1,0 +1,52 @@
+.header {
+    background-color: $headerColor;
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+    }
+
+    &__logo {
+        font-size: 1.8rem;
+    }
+
+    &__menu {
+        display: flex;
+        gap: 48px;
+        align-items: center;
+    }
+
+
+    &__link {
+        font-size: 1.8rem;
+
+    }
+
+    &__burger {
+        display: none;
+        width: 50px;
+        height: 2px;
+        background-color: black;
+        position: relative;
+
+        &::after,
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            background-color: black;
+            top: 10px;
+            right: 0;
+        }
+
+        &::before {
+            top: -10px;
+        }
+
+
+    }
+
+}
